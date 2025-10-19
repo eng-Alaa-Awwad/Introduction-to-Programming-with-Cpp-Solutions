@@ -1,0 +1,24 @@
+// ******** QUESTION ******** 
+/*
+  (Physics: acceleration) Average acceleration is defined as the change of velocity
+  divided by the time taken to make the change, as shown in the following formula:
+  a = (v1 - v0)/t
+  Write a program that prompts the user to enter the starting velocity v0 in meters/
+  second, the ending velocity v1 in meters/second, and the time span t in seconds, and
+  displays the average acceleration.
+*/
+
+// ******** SOLUTION ******** 
+
+#include<iostream>
+using namespace std;
+
+int main(){
+  double startingVelocity, endVelocity, time, acceleration;
+
+  cout << "Enter v0, v1, and t: ";
+  cin >> startingVelocity >> endVelocity >> time;
+  acceleration = (endVelocity - startingVelocity) / time;
+  cout << "The average acceleration is " << acceleration ; 
+  return 0;
+}
