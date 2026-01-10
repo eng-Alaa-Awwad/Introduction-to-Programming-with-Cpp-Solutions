@@ -1,0 +1,37 @@
+// ******** QUESTION ******** 
+/*
+(Sort three integers) Write a program that prompts the user to enter three integers
+and display the integers in non-decreasing order.
+*/
+
+// ******** SOLUTION ******** 
+#include<iostream>
+using namespace std;
+
+int main(){
+  int a, b, c;
+    cout << "Enter three integers: ";
+    cin >> a >> b >> c;
+
+    if (a > b) {
+        int temp = a;
+        a = b;
+        b = temp;
+    }
+
+    if (a > c) {
+        int temp = a;
+        a = c;
+        c = temp;
+    }
+
+    if (b > c) {
+        int temp = b;
+        b = c;
+        c = temp;
+    }
+
+    cout << "Sorted order: " << a << " " << b << " " << c << endl;
+
+    return 0;
+}
